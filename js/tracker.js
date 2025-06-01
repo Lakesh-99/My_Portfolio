@@ -9,31 +9,28 @@
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
+// Track visit
+function trackVisit() {
+  const visitData = {
+    timestamp: new Date(),
+    page: window.location.pathname,
+    referrer: document.referrer || 'direct',
+    userAgent: navigator.userAgent,
+    screen: `${window.innerWidth}x${window.innerHeight}`,
+    language: navigator.language
+  };
 
-    // Track visit
-    function trackVisit() {
-      const visitData = {
-        timestamp: new Date(),
-        page: window.location.pathname,
-        referrer: document.referrer || 'direct',
-        userAgent: navigator.userAgent,
-        screen: `${window.innerWidth}x${window.innerHeight}`,
-        language: navigator.language
-      };
+  db.collection("site_visits").add(visitData)
+    .then(() => {
+      console.log("Visit tracked!", visitData);
+    })
+    .catch((error) => {
+      console.error("Error tracking visit: ", error);
+    });
+}
 
-      db.collection("site_visits").add(visitData)
-        .then(() => {
-          console.log("Visit tracked!", visitData);
-        })
-        .catch((error) => {
-          console.error("Error tracking visit: ", error);
-        });
-    }
-
-    // Run tracking on page load
-    trackVisit();
+// Run tracking on page load
+trackVisit();
