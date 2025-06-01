@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/jpg" href="profile/logo.jpg">
+  <title>Lakesh's Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #f7fafd;
+      --bg-gradient: linear-gradient(115deg, #f7fafd 0%, #e8edf3 100%);
+      --border: #e3e7ee;
+      --card-bg: #fff;
+      --card-border: #e5eaf1;
+      --accent: #0a84ff;
+      --accent-dark: #155ec5;
+      --text-main: #1b1b1f;
+      --text-muted: #627089;
+      --header-title: #23272e;
+      --shadow: 0 6px 24px 0 rgba(45,76,255,0.06);
+      --shadow-hover: 0 12px 36px 0 rgba(10,132,255,0.09);
+      --navbar-bg: rgba(255,255,255,0.82);
+      --toggle-bg: #f4f7fb;
+      --toggle-border: #d6deeb;
+      --resume-btn: linear-gradient(90deg, #2196f3 65%, #6366f1 100%);
+      --section-bg: #fafdff;
+      --skill-bg: #f3f6fc;
+    }
+    html.dark {
+      --bg: #10141b;
+      --bg-gradient: linear-gradient(120deg, #000000 0%, #000000 100%);
+      --border: #23304a;
+      --card-bg: #171c25;
+      --card-border: #23304a;
+      --accent: #339cff;
+      --accent-dark: #267acc;
+      --text-main: #f3f5fa;
+      --text-muted: #94a3b8;
+      --header-title: #60a7f7;
+      --shadow: 0 4px 28px 0 rgba(39, 84, 184, 0.18);
+      --shadow-hover: 0 10px 34px 0 rgba(49,104,255,0.21);
+      --navbar-bg: rgba(18,23,38,0.95);
+      --toggle-bg: #202940;
+      --toggle-border: #385079;
+      --resume-btn: linear-gradient(90deg, #339cff 70%, #6366f1 100%);
+      --section-bg: #181f2d;
+      --skill-bg: #232c44;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; background: var(--bg-gradient); transition: background 0.3s;}
+    body {
+      font-family: 'Inter', system-ui, Arial, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.72;
+      transition: background 0.3s, color 0.3s;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--navbar-bg);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      z-index: 20;
+      transition: background 0.28s;
+    }
+    .navbar {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.7rem;
+      position: relative;
+    }
+    .nav-link {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 1.12rem;
+      letter-spacing: 0.01em;
+      padding: 0.5rem 0;
+      position: relative;
+      transition: color 0.17s;
+    }
+    .nav-link.active, .nav-link:hover {
+      color: var(--accent);
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 100%; height: 2.5px;
+      background: var(--accent);
+      border-radius: 2px;
+      box-shadow: 0 0 7px #339cff50;
+    }
+
+    .toggle-switch {
+      position: absolute;
+      right: 0.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      width: 52px;
+      height: 32px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: relative;
+      width: 52px;
+      height: 32px;
+      background: var(--toggle-bg);
+      border: 1.7px solid var(--toggle-border);
+      border-radius: 32px;
+      transition: background 0.3s, border 0.3s;
+      box-shadow: 0 2px 8px #18426a0a;
+      display: flex;
+      align-items: center;
+    }
+    .slider:before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.28s cubic-bezier(.4,2.2,.2,1), background 0.3s;
+      box-shadow: 0 1px 6px #22315922;
+      z-index: 2;
+    }
+    .slider .fa-moon, .slider .fa-sun {
+      position: absolute;
+      font-size: 1.07rem;
+      top: 7px;
+      z-index: 3;
+      transition: color 0.3s;
+      pointer-events: none;
+    }
+    .slider .fa-moon {
+      left: 9px;
+      color: #7a90b4;
+    }
+    .slider .fa-sun {
+      right: 8px;
+      color: #f6c951;
+    }
+    .toggle-switch input:checked + .slider:before {
+      transform: translateX(20px);
+      background: #222;
+    }
+    .toggle-switch input:checked + .slider {
+      background: #212c3a;
+      border-color: var(--accent);
+    }
+    .toggle-switch input:checked + .slider .fa-moon {
+      color: #61a3ff;
+    }
+    .toggle-switch input:checked + .slider .fa-sun {
+      color: #444;
+    }
+
+
+    .hero-section {
+      max-width: 970px;
+      margin: 2.5rem auto 1.5rem auto;
+      display: flex;
+      gap: 2.8rem;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1.5rem;
+    }
+    .hero-photo {
+      width: 330px;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 24px;
+      background: #eaeef3;
+      box-shadow: 0 8px 36px 0 rgba(40,96,215,0.13);
+      border: 1.5px solid var(--card-border);
+      display: block;
+      transition: box-shadow 0.3s, border 0.3s;
+    }
+    html.dark .hero-photo {
+      background: #232c44;
+      border: 1.5px solid #223159;
+      box-shadow: 0 10px 36px 0 rgba(49,104,255,0.19);
+    }
+
+    .hero-info {
+      flex: 1;
+      min-width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .hero-info h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--header-title);
+      margin-bottom: 0.41rem;
+      letter-spacing: -0.5px;
+      transition: color 0.25s;
+      text-align: left;
+    }
+    .subtitle {
+      font-size: 1.18rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+    .social-links {
+      margin: 0.7rem 0 1.1rem 0;
+    }
+    .social-links a {
+      color: var(--accent-dark);
+      font-size: 1.44rem;
+      margin-right: 0.7rem;
+      display: inline-block;
+      border-radius: 50%;
+      padding: 0.21rem 0.25rem 0.17rem 0.25rem;
+      background: none;
+      box-shadow: none;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .social-links a:hover,
+    .social-links a:focus-visible {
+      color: var(--accent);
+      background: none;
+      box-shadow: none;
+      outline: none;
+      transform: none;
+    }
+    .social-links a:last-child { margin-right: 0; }
+
+    .resume-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.68rem 1.5rem;
+      background: var(--resume-btn);
+      color: #fff;
+      border-radius: 22px;
+      font-weight: 500;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      font-size: 1.09rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      border: none;
+      outline: none;
+      transition: opacity 0.3s, box-shadow 0.22s;
+      cursor: pointer;
+    }
+    .resume-btn:hover {
+      opacity: 0.92;
+      box-shadow: var(--shadow-hover);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto 2.4rem auto;
+      background: var(--card-bg);
+      border-radius: 22px;
+      padding: 2.3rem 2.3rem 2.1rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: background 0.32s, box-shadow 0.22s;
+      border: 1px solid var(--card-border);
+    }
+
+    .section {
+      text-align: left;
+      background: var(--section-bg);
+      border-radius: 15px;
+      padding: 1.6rem 1.5rem 1.4rem 1.2rem;
+      margin: 2.1rem 0 0 0;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 2px 12px #218fff07;
+      transition: background 0.25s, border 0.25s;
+    }
+    .section-title {
+      font-size: 1.19rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.85rem;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.01em;
+      transition: color 0.22s;
+    }
+    .section p {
+      color: var(--text-main);
+      line-height: 1.77;
+      font-size: 1.05rem;
+      margin-bottom: 0.18rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      list-style: none;
+      margin-top: 0.4rem;
+      padding: 0;
+    }
+    .skills-list li {
+      background: var(--skill-bg);
+      padding: 0.49rem 1.08rem;
+      border-radius: 22px;
+      font-weight: 500;
+      color: var(--accent-dark);
+      font-size: 1rem;
+      transition: background 0.22s, color 0.22s;
+      box-shadow: 0 1px 4px #b6cef61a;
+      border: 1px solid var(--card-border);
+    }
+    html.dark .skills-list li {
+      color: #83bbfa;
+      background: #232c44;
+      box-shadow: 0 1px 6px #22315922;
+      border: 1px solid #223159;
+    }
+
+
+    @media (max-width: 990px) {
+      .hero-section { flex-direction: column; gap: 2rem; align-items: center; }
+      .hero-photo { width: 240px; height: 240px; }
+      .hero-info { align-items: center; }
+      .hero-info h1, .subtitle { text-align: center; }
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1.5rem 0.5rem; }
+      .section { padding: 1.07rem 0.7rem 1.0rem 0.5rem; }
+      .hero-photo { border-radius: 13px; }
+      .hero-section { padding: 0 0.4rem; }
+      .skills-list li { font-size: 0.89rem; padding: 0.38rem 0.81rem; }
+    }
+    @media (max-width: 410px) {
+      h1 { font-size: 1.1rem; }
+      .skills-list { gap: 0.37rem;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <a href="index.html" class="nav-link active">Portfolio</a>
+      <a href="projects/index.html" class="nav-link">Projects</a>
+      <label class="toggle-switch" aria-label="Toggle light/dark mode">
+        <input type="checkbox" id="toggleModeSwitch" />
+        <span class="slider">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </span>
+      </label>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <img src="profile/pic2.jpg" alt="Lakesh Kumar Suryadevara" class="hero-photo">
+    <div class="hero-info">
+      <h1>Lakesh Kumar Suryadevara</h1>
+      <div class="subtitle">Graduate Data Scientist &nbsp;|&nbsp; Machine Learning Enthusiast</div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lakeshkumarsuryadevara" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a class="resume-btn" href="profile/Lakeshkumar_Suryadevara.pdf" target="_blank"><i class="fas fa-download"></i>Download Resume</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <div class="section-title">Profile</div>
+      <p>
+        I recently graduated with a degree in Data Science and love working with data to find useful insights. I have experience building machine learning models for things like text analysis, image recognition, and predicting trends. I enjoy every part of the process—from collecting and cleaning data to creating visual reports and tools that help people make better decisions. I’m always eager to learn and excited to use my skills to solve real-world problems and make a positive difference.
+      </p>
+    </section>
+    <section class="section">
+      <div class="section-title">Skills &amp; Tools</div>
+      <ul class="skills-list">
+        <li>Python</li><li>R</li><li>SQL</li><li>Java</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li>
+        <li>Pandas</li><li>NumPy</li><li>TensorFlow</li><li>Prophet</li><li>LangChain</li><li>Power BI (DAX, Power Query)
+        </li><li>Data Visualization</li><li>Jupyter Notebook</li><li>Spyder</li><li>SQLite</li><li>Microsoft Excel</li>
+      </ul>
+    </section>
+  </div>
+  <script>
+    
+    const toggleSwitch = document.getElementById('toggleModeSwitch');
+    const htmlEl = document.documentElement;
+
+    function getPreferredMode() {
+      if (localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function applyMode(mode) {
+      if (mode === 'dark') {
+        htmlEl.classList.add('dark');
+        toggleSwitch.checked = true;
+      } else {
+        htmlEl.classList.remove('dark');
+        toggleSwitch.checked = false;
+      }
+      localStorage.setItem('theme', mode);
+    }
+
+    toggleSwitch.addEventListener('change', () => {
+      applyMode(toggleSwitch.checked ? 'dark' : 'light');
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applyMode(getPreferredMode());
+    });
+  </script>
+</body>
+</html>
