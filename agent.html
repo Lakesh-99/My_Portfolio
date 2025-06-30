@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Black Friday Deals Agent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a> <!--  <a href="skills.html">Skills</a>  -->
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <h1 class="project-detail-title">Black Friday Deals Agent</h1>
+            <p class="project-subtitle">
+                An automated price tracking and prediction agent designed to help users seize optimal deals during major sales events.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-tags"></i> Python &middot; Flask &middot; Web Scraping &middot; SQLite &middot; Twilio &middot; SMTP
+                </span>
+            </p>
+
+            <div class="captioned-image">
+                <img src="assests/blackfriday/inntro.png" alt="Black Friday Deals Agent Dashboard Screenshot" class="project-cover-image">
+                <p class="img-caption">
+                    The intuitive dashboard provides an overview of all tracked deals, live alerts, and predicted optimal prices.
+                </p>
+            </div>
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3> <p>
+                    I was constantly checking product pages for price drops, especially during high-stakes sales periods like Black Friday, which was incredibly time-consuming and inefficient. My motivation was to create a personal automation tool that could handle all the deal-hunting for me, saving valuable time and ensuring I received immediate notifications the moment a target price was met.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Features</h3> <ul class="project-list">
+                    <li><b>Instant Alerts:</b> Users receive immediate notifications via email or SMS (Twilio) as soon as a tracked product's price drops to their desired target.</li>
+                    <li><b>Automated Monitoring:</b> The application autonomously tracks product prices across specified e-commerce platforms 24/7, eliminating the need for manual checking.</li>
+                    <li><b>Smarter Purchasing Decisions:</b> By providing access to historical price data and predictive analytics for future price drops, the agent empowers users to assess whether a deal is genuinely good or if it's better to wait.</li>
+                    <li><b>Flexible Customization:</b> Users can define unique product names, set personalized price goals, and configure different contact details for each product being tracked.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Workflow Overview</h3> <ul class="project-list">
+                    <li>Users input product links and configure their alert preferences directly through a simple web form interface.</li>
+                    <li>The application continuously monitors and logs product prices from the specified e-commerce sites into a database.</li>
+                    <li>Utilizing historical price data, the agent predicts potential future price drops, advising users on optimal waiting or purchasing strategies.</li>
+                    <li>Upon a price reaching the user-defined target, an instant notification is dispatched via the preferred method (email or SMS), ensuring no deal is missed.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Architecture</h3> <ul class="project-list">
+                    <li><b>Web Scrapers:</b> Developed robust web scraping modules using BeautifulSoup and Requests to efficiently extract real-time pricing data from Amazon, Best Buy, and Walmart.</li>
+                    <li><b>Price Logging & Database:</b> Implemented a SQLite database to persistently store comprehensive price history for all tracked products, enabling trend analysis.</li>
+                    <li><b>Price Prediction:</b> Utilized NumPy for data manipulation and basic time-series analysis to estimate future price movements and predict potential optimal buying windows.</li>
+                    <li><b>Alerting System:</b> Integrated Twilio for sending SMS alerts and SMTP for email notifications, ensuring immediate communication of price drops.</li>
+                    <li><b>User Interface:</b> Built a simple, intuitive web interface using Flask, designed for ease of use by non-technical individuals.</li>
+                    <li><b>Automation:</b> Incorporated an automated scheduler to manage background price checking, ensuring continuous operation without manual intervention.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3> <div class="captioned-image">
+                    <img src="assests/blackfriday/s2.jpg" alt="Setup Page Screenshot">
+                    <p class="img-caption">The product setup page where users enter URLs and set their alert preferences.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests/blackfriday/s1.jpg" alt="Dashboard Screenshot">
+                    <p class="img-caption">A view of the dashboard displaying live prices, predictive insights, and direct links to each product page.</p>
+                </div>
+            </div>
+
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>Languages:</strong> Python</li>
+                    <li><strong>Web Framework:</strong> Flask</li>
+                    <li><strong>Web Scraping:</strong> BeautifulSoup, Requests</li>
+                    <li><strong>Database:</strong> SQLite</li>
+                    <li><strong>Data Analysis:</strong> NumPy</li>
+                    <li><strong>Messaging APIs:</strong> Twilio (SMS), SMTP (Email)</li>
+                    <li><strong>Automation:</strong> Custom Scheduler</li>
+                </ul>
+                <div class="project-links-bottom">
+                 <!--   <a href="https://github.com/yourusername/black-friday-deals-agent" target="_blank" rel="noopener noreferrer" class="project-btn btn-code"><i class="fab fa-github"></i> View Code on GitHub</a>-->
+                    </div>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Impact</h3> <p>
+                    This project was more than just a coding exercise; it became a genuinely useful tool that I, my friends, and my family actively use, saving us from missing out on significant deals. It was immensely gratifying to integrate various technical skills—automation, data handling, and web development—into a practical application that simplifies everyday life. The experience reinforced my passion for building solutions that are not only technically sound but also deliver tangible, real-world value.
+                </p>
+            </div>
+
+        </div> </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <!--  <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">-->
+              <!--   <i class="fab fa-github"></i>-->
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> </body>
+</html>

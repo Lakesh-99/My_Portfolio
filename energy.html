@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Resilient Energy Consumption Forecasting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a> <!--  <a href="skills.html">Skills</a>  --> 
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <img src="assests/power/intro.png" alt="Energy Forecast Example Cover Image" class="project-cover-image">
+            
+            <h1 class="project-detail-title">Resilient Energy Consumption Forecasting</h1>
+            <p class="project-subtitle">
+                Developing energy forecasts that are not just accurate, but also reliable and robust—even amidst real-world data imperfections and system disruptions.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-bolt"></i> Python &middot; Streamlit &middot; Prophet &middot; Data Science &middot; Reliability Engineering
+                </span>
+            </p>
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3> <p>
+                    I developed this application from a firsthand understanding of how critical it is for energy systems—be it power grids, manufacturing facilities, or data centers—to have predictive models they can truly trust. My primary objective was to engineer a solution that is not only intelligent but also resilient enough to perform flawlessly even when faced with imperfect real-world data. I leveraged Python, Prophet, and Streamlit, embedding custom reliability features throughout the development process.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Significance & Impact</h3> <p>
+                    Accurate energy forecasts are foundational to maintaining stable power supplies and enabling efficient planning for individuals and industries. However, conventional models often falter when encountering anomalous data or information gaps. My aim was to overcome this by creating a tool that consistently delivers actionable predictions, even if unforeseen issues arise. This project resonates deeply with me because I am driven to create solutions that yield tangible, real-world impact beyond theoretical laboratory settings.
+                </p>
+                <ul class="project-list">
+                    <li><b>Prevents blackouts and overloads:</b> By delivering reliable forecasts, operators gain early visibility into potential issues, enabling proactive planning and load balancing.</li>
+                    <li><b>Keeps businesses running smoothly:</b> Industries like manufacturing, healthcare (hospitals), and data centers can make more confident and safer operational decisions.</li>
+                    <li><b>Helps the planet:</b> Enhanced forecast reliability facilitates the safer and more efficient integration of intermittent renewable energy sources into the grid.</li>
+                    <li><b>Supports operational safety:</b> The tool is designed to provide sensible predictions even in emergency scenarios, ensuring continuous decision support.</li>
+                    <li><b>Builds trust:</b> By transparently illustrating the provenance of each prediction (whether from the primary model or a fallback), users can unequivocally rely on the results.</li>
+                    <li><b>Saves money and cuts waste:</b> Superior forecasting translates directly into reduced energy wastage and optimized operational costs.</li>
+                </ul>
+                <p>
+                    <b>In summary:</b> My commitment was to construct a forecasting system that is inherently trustworthy and intuitive, empowering users to make critical decisions with confidence when it matters most.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Features</h3> <ul class="project-list">
+                    <li><b>Full-Stack Development:</b> I managed the end-to-end development, from data cleaning and feature engineering to model training and the creation of an intuitive, interactive Streamlit dashboard.</li>
+                    <li><b>Inherent Resilience:</b> Integrated a custom-designed "circuit breaker" mechanism that intelligently detects anomalous or failing forecasts and seamlessly switches to a pre-defined, safe fallback prediction (e.g., 7-day moving average), preventing unreliable outputs.</li>
+                    <li><b>User-Centric Design:</b> The Streamlit interface allows users to easily adjust forecasting parameters, visualize clear historical data vs. predictions, and instantly discern whether a given forecast is from the primary model or the fallback system.</li>
+                    <li><b>Robust Testing:</b> Implemented a comprehensive suite of unit and integration tests, specifically focusing on error handling and graceful degradation scenarios to ensure real-world operational robustness.</li>
+                    <li><b>Modern Tooling & Impact:</b> Leveraged leading open-source Python libraries to deliver a high-impact solution that prioritizes operational stability and user confidence.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Workflow</h3> <ul class="project-list">
+                    <li><b>Data Ingestion:</b> The application ingests energy consumption data (from real-world sources or simulated, often with introduced anomalies for robustness testing).</li>
+                    <li><b>Predictive Modeling:</b> Utilizes advanced time-series models such as Prophet or ARIMA to generate future energy consumption forecasts.</li>
+                    <li><b>Anomaly Detection & Fallback:</b> Implements a built-in "circuit breaker" that continuously monitors forecast outputs. If a prediction deviates significantly from expected patterns or the model fails, it automatically triggers a switch to a pre-configured, reliable fallback mechanism (e.g., historical averages).</li>
+                    <li><b>Interactive Visualization:</b> All processes—from raw data to primary forecasts and fallback predictions—are displayed live on an interactive Streamlit dashboard, providing transparent insights into the system's behavior.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3> <div class="captioned-image">
+                    <img src="assests/power/power1.jpg" alt="Energy Consumption Data Plot">
+                    <p class="img-caption">Visualization of historical energy consumption data, demonstrating trends and patterns.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests/power/results.jpg" alt="Energy Forecasting Results Dashboard">
+                    <p class="img-caption">An example of the Streamlit dashboard displaying forecasted energy consumption against actuals, including confidence intervals.</p>
+                </div>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Reflections</h3> <p>
+                    This project was a profound learning experience, shifting my focus from purely theoretical model accuracy to practical system resilience and user trust. It taught me the invaluable lesson of designing for failure and building robust systems that function reliably in unpredictable real-world environments. I am particularly proud of creating a tool that can genuinely contribute to operational stability and empower better decision-making in critical infrastructure. I am eager to continue developing solutions that offer substantial real-world utility.
+                </p>
+                <div class="project-links-bottom">
+                   <!-- <a href="https://github.com/yourusername/resilient-energy-forecasting" target="_blank" rel="noopener noreferrer" class="project-btn btn-code"><i class="fab fa-github"></i> View Code on GitHub</a>-->
+                    </div>
+            </div>
+            
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>Languages:</strong> Python 3</li>
+                    <li><strong>Libraries:</strong> Prophet, ARIMA, Pandas, NumPy, Streamlit, Matplotlib, Seaborn</li>
+                    <li><strong>Tools:</strong> Jupyter Notebook, Streamlit</li>
+                    <li><strong>Concepts:</strong> Time Series Forecasting, Anomaly Detection, Reliability Engineering, Data Visualization, Web Application Development</li>
+                </ul>
+            </div>
+
+        </div> </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <!--  <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">-->
+              <!--   <i class="fab fa-github"></i>-->
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>

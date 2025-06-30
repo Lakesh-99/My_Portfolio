@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>AI Investment Research Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a> <!--  <a href="skills.html">Skills</a>  -->
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <h1 class="project-detail-title">AI Investment Research Assistant</h1>
+            <p class="project-subtitle">
+                A platform designed to empower investors and analysts with rapid, AI-driven insights from complex financial reports and public data.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-robot"></i> Streamlit &middot; LangChain &middot; FAISS &middot; LLMs &middot; Financial Data
+                </span>
+            </p>
+
+            <div class="captioned-image">
+                <img src="assests/airag/pro intro.png" alt="Black Friday Deals Agent Dashboard Screenshot" class="project-cover-image">
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Project Overview</h3> <p>
+                    This web application empowers users to conduct in-depth analysis of public company data. It supports input via direct SEC 10-K PDF uploads or real-time data retrieval through the Alpha Vantage API. At its core, the system utilizes advanced Retrieval-Augmented Generation (RAG) techniques and transformer models to answer complex financial questions in clear, concise, and easily understandable language.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Significance & Impact</h3> <p>
+                    Navigating lengthy and intricate financial documents is a time-consuming challenge even for experienced professionals. My project streamlines this process, transforming vast quantities of raw financial data into actionable, digestible insights. This innovation significantly reduces research time, democratizes access to complex financial information, and makes informed investing more accessible to a broader audience, not just financial experts.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Core Functionality</h3> <ul class="project-list">
+                    <li>Facilitates data input through direct SEC 10-K PDF uploads or by fetching company-specific information via ticker symbols using the Alpha Vantage API.</li>
+                    <li>Accurately answers natural-language questions related to financial data, such as "What was the 2023 EPS?" or "Describe revenue growth trends."</li>
+                    <li>Generates concise summaries of key information extracted from extensive financial reports, highlighting critical insights.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Workflow</h3> <ul class="project-list">
+                    <li>**Data Ingestion:** Acquires financial data either from the Alpha Vantage API for real-time metrics or by parsing uploaded PDF documents.</li>
+                    <li>**Text Processing:** Employs LangChain to break down large text documents into smaller, manageable chunks, optimizing for efficient information retrieval.</li>
+                    <li>**Vector Search:** Utilizes FAISS (Facebook AI Similarity Search) to rapidly find the most relevant information chunks based on user queries.</li>
+                    <li>**Response Generation:** Leverages a Hugging Face language model (specifically FLAN-T5) to synthesize the retrieved information and generate a coherent, human-readable answer.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">My Contribution</h3> <p>
+                    I was responsible for the end-to-end development of this AI Investment Research Assistant. This encompassed designing and implementing the backend logic, integrating various APIs and models, and crafting the intuitive user interface. My primary focus was on ensuring the system delivers accurate, helpful answers in a seamless user experience.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3> <div class="captioned-image">
+                    <img src="assests/airag/ticker.jpg" alt="Ticker Symbol Input Screenshot">
+                    <p class="img-caption">Seamlessly retrieve financial data by entering a company ticker symbol and desired fiscal year.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests/airag/pdf.jpg" alt="PDF Upload Screenshot">
+                    <p class="img-caption">Upload your own financial reports in PDF format for instant AI-powered analysis.</p>
+                </div>
+            </div>
+
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3> <ul class="tech-stack-list">
+                    <li><strong>UI:</strong> Streamlit (Python web application framework)</li>
+                    <li><strong>AI Models:</strong> Hugging Face Transformers (FLAN-T5 for LLM)</li>
+                    <li><strong>Vector Search:</strong> Sentence Transformers + FAISS</li>
+                    <li><strong>External Data API:</strong> Alpha Vantage</li>
+                    <li><strong>PDF Parsing:</strong> PyPDF2</li>
+                    <li><strong>Orchestration:</strong> LangChain</li>
+                </ul>
+                <div class="project-links-bottom">
+                    <!-- <a href="https://github.com/yourusername/ai-investment-research-assistant" target="_blank" rel="noopener noreferrer" class="project-btn btn-code"><i class="fab fa-github"></i> View Code on GitHub</a>-->
+                    </div>
+            </div>
+
+        </div> </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <!--  <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">-->
+              <!--   <i class="fab fa-github"></i>-->
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> </body>
+</html>

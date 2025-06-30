@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assests/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakesh's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-top-row">
+        <a href="index.html" class="site-title">
+          <h1>LAKESH KUMAR SURYADEVARA</h1>
+        </a>
+      </div>
+      <div class="header-bottom-row">
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee" role="banner" aria-hidden="true">
+    <div class="marquee__inner">
+      <span>Lakesh | DATA SCIENTIST | MACHINE LEARNING ENTHUSIAST | Lakesh | DATA SCIENTIST | MACHINE LEARNING ENTHUSIAST |</span>
+      <span>Lakesh | DATA SCIENTIST | MACHINE LEARNING ENTHUSIAST | Lakesh | DATA SCIENTIST | MACHINE LEARNING ENTHUSIAST |</span>
+    </div>
+  </div>
+
+  <section id="hero" class="section hero-section">
+    <div class="hero-left">
+      <div class="hero-image-container">
+        <img src="assests/pic2.jpg" alt="Your Professional Photo" class="hero-photo" />
+      </div>
+      <a href="contact.html" class="btn">CONNECT WITH ME</a>
+    </div>
+
+    <div class="hero-right">
+      <h2>Hey! I’m Lakesh, a Data Science Graduate.</h2>
+      <p>
+        I'm a passionate and analytical Data Scientist with a strong foundation in machine learning, statistical modeling, and data visualization. My academic background has equipped me with the skills to transform complex data into actionable insights, driving informed decision-making.
+      </p>
+      <p>
+        I thrive on tackling challenging problems and am proficient in Python, R, SQL, and various data science libraries (e.g., scikit-learn, TensorFlow, PyTorch). I'm eager to apply my expertise to real-world datasets, build predictive models, and contribute to innovative data-driven solutions.
+      </p>
+      <p>
+        Some areas I'm particularly enthusiastic about include Natural Language Processing (NLP), time series analysis, and deploying machine learning models. I'm actively seeking opportunities to join a dynamic team where I can continue to learn, grow, and make a tangible impact.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+    </svg>
+  </div>
+
+  <footer id="contact">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Lakesh. All rights reserved.</p>
+  </footer>
+
+  <!-- Firebase SDK v8 - must include all 3 scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+  <!-- Your tracker script -->
+  <script src="main.js"></script>
+</body>
+</html>

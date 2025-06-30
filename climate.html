@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Climate Change Impact on Crop Yield Forecasting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a> <!--  <a href="skills.html">Skills</a>  --> <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <img src="assests/agri/agri_intro.png" alt="Farmland and forecast chart - Project Introduction" class="project-cover-image">
+            <h1 class="project-detail-title">Predicting Crop Yields in a Changing Climate</h1>
+
+            <p class="project-subtitle">
+                Using data science and machine learning to understand and forecast the impact of climate change on global food production.
+                <br>
+                <span class="project-tech-summary"><i class="fab fa-python"></i> Python &middot; Prophet &middot; Time Series &middot; Data Visualization</span>
+            </p>
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3> <p>
+                    Climate change isn’t just news—it’s something that’s already changing the way we grow our food. I wanted to see, with real data, how rising temperatures might change crop yields around the world. So, I used open datasets and built forecasts with <b>Prophet</b> (a time series tool) to predict what could happen to crops in the next few years. My goal? Turn all that data into something useful that farmers and decision-makers can actually use.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Significance & Impact</h3> <p><b>Food security needs clear vision.</b> Even a little change in weather can mean a lot for food and for people’s lives. I wanted my project to give helpful, honest forecasts—so farmers can plan ahead, and leaders can prepare for what’s coming.</p>
+                <ul class="project-list">
+                    <li>Help farmers and businesses get ready for a changing climate.</li>
+                    <li>Give useful info to people making policies or running food programs.</li>
+                    <li>Strengthen food supply chains against climate surprises.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Methodology & Approach</h3> <ul class="project-list">
+                    <li><b>Gathered the data:</b> I pulled together crop yield and climate data from various sources, performed rigorous cleaning, and handled missing values using imputation techniques.</li>
+                    <li><b>Engineered new features:</b> Created new climate indicators, such as cumulative growing degree days and extreme temperature event flags, to enhance the predictive power of my models.</li>
+                    <li><b>Built the models:</b> Employed Facebook Prophet for time-series forecasting, leveraging its ability to model trends, seasonality, and holidays, and integrated temperature data as an exogenous regressor.</li>
+                    <li><b>Visualized the results:</b> Developed clear and interactive charts using Matplotlib and Plotly, displaying five-year forecasts with confidence intervals to convey potential risks and uncertainties to stakeholders.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3> <div class="captioned-image"><img src="assests/agri/Brazil_Rice_forecast.png" alt="Brazil Rice Yield Forecast"><p class="img-caption">Brazil: Rice yield forecast (with temperature trends)</p></div>
+                <div class="captioned-image"><img src="assests/agri/Brazil_Wheat_forecast.png" alt="Brazil Wheat Yield Forecast"><p class="img-caption">Brazil: Wheat yield forecast</p></div>
+                <div class="captioned-image"><img src="assests/agri/Brazil_Maize (corn)_forecast.png" alt="Brazil Maize Yield Forecast"><p class="img-caption">Brazil: Maize (corn) yield forecast</p></div>
+
+                <div class="captioned-image"><img src="assests/agri/Canada_Maize (corn)_forecast.png" alt="Canada Maize Yield Forecast"><p class="img-caption">Canada: Maize (corn) yield forecast</p></div>
+                <div class="captioned-image"><img src="assests/agri/Canada_Wheat_forecast.png" alt="Canada Wheat Yield Forecast"><p class="img-caption">Canada: Wheat yield forecast</p></div>
+
+                <div class="captioned-image"><img src="assests/agri/India_Maize (corn)_forecast.png" alt="India Maize Yield Forecast"><p class="img-caption">India: Maize (corn) yield forecast</p></div>
+                <div class="captioned-image"><img src="assests/agri/India_Rice_forecast.png" alt="India Rice Yield Forecast"><p class="img-caption">India: Rice yield forecast</p></div>
+                <div class="captioned-image"><img src="assests/agri/India_Wheat_forecast.png" alt="India Wheat Yield Forecast"><p class="img-caption">India: Wheat yield forecast</p></div>
+
+                <div class="captioned-image"><img src="assests/agri/United States of America_Maize (corn)_forecast.png" alt="USA Maize Yield Forecast"><p class="img-caption">USA: Maize (corn) yield forecast</p></div>
+                <div class="captioned-image"><img src="assests/agri/United States of America_Rice_forecast.png" alt="USA Rice Yield Forecast"><p class="img-caption">USA: Rice yield forecast</p></div>
+                <div class="captioned-image"><img src="assests/agri/United States of America_Wheat_forecast.png" alt="USA Wheat Yield Forecast"><p class="img-caption">USA: Wheat yield forecast</p></div>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Results & Learnings</h3> <ul class="project-list">
+                    <li>Discovered that some crops and geographical regions exhibit significantly higher sensitivity to temperature fluctuations than others, emphasizing the need for localized adaptation strategies.</li>
+                    <li>Learned the importance of explicitly quantifying and visualizing forecast uncertainty; this approach empowers decision-makers to assess risks and formulate more resilient plans.</li>
+                    <li>Developed a flexible and extensible forecasting pipeline that can be easily adapted to new countries, crops, or integrated with updated climate datasets.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Reflections</h3> <p>For me, this project wasn’t just about building a model. It was about leveraging data science to make a tangible impact—providing actionable knowledge to help communities adapt and protect our global food supply. It reinforced my belief that rigorous data analysis, combined with clear communication of insights, can drive meaningful change beyond mere predictions.</p>
+                <div class="project-links-bottom">
+                   <!-- <a href="https://github.com/yourusername/climate-crop-yield" target="_blank" rel="noopener noreferrer" class="project-btn btn-code"><i class="fab fa-github"></i> View Code on GitHub</a>-->
+                    </div>
+            </div>
+            
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>Languages:</strong> Python</li>
+                    <li><strong>Libraries:</strong> Pandas, Prophet, Matplotlib, Seaborn, Scikit-learn, SciPy</li>
+                    <li><strong>Tools:</strong> Jupyter Notebook, Google Colab</li>
+                    <li><strong>Concepts:</strong> Time Series Analysis, Feature Engineering, Data Cleaning, Data Visualization</li>
+                </ul>
+            </div>
+
+        </div> </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <!--  <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">-->
+              <!--   <i class="fab fa-github"></i>-->
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>

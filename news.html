@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+<link rel="shortcut icon" type="image/jpg" href="assests/logo.jpg">
+    <title>Real-Time Financial News Sentiment Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a> <!--  <a href="skills.html">Skills</a>  -->
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <img src="assests/bert_sentiment/Intro.png" alt="Financial News Sentiment Dashboard Screenshot" class="project-cover-image">
+            
+            <h1 class="project-detail-title">Real-Time Financial News Sentiment Dashboard</h1>
+            <p class="project-subtitle">
+                Providing live financial news sentiment analysis to empower investors and analysts with instant market insights.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-chart-line"></i> Python &middot; Streamlit &middot; FinBERT &middot; Plotly &middot; NLP
+                </span>
+            </p>
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3> <p>
+                    I developed this dashboard to address the challenge of information overload in financial markets. My goal was to provide an intuitive and accessible tool for anyone—from seasoned investors and analysts to curious individuals—to instantly gauge the sentiment surrounding any stock or company in real-time. By leveraging cutting-edge natural language processing (specifically FinBERT) and a user-friendly web application, users can quickly understand market mood with minimal effort.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Significance & Impact</h3> <p>
+                    Financial news can rapidly influence market movements, and overlooking a shift in sentiment can lead to missed opportunities. This dashboard eliminates the need for expensive proprietary tools or tedious manual review of countless headlines. It empowers users to quickly identify sentiment trends, react promptly to market changes, and make more informed decisions, all through a clean, straightforward interface.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Features</h3> <ul class="project-list">
+                    <li><b>News Aggregation:</b> Integrated with NewsAPI to fetch the latest financial headlines based on user-defined keywords and date ranges.</li>
+                    <li><b>Automated Sentiment Analysis:</b> Employed FinBERT, a domain-specific BERT model, to automatically classify news articles as positive, negative, or neutral.</li>
+                    <li><b>Interactive Visualizations:</b> Created dynamic and clear charts (including pie charts and line graphs) using Plotly to visually represent sentiment trends at a glance.</li>
+                    <li><b>Intuitive User Interface:</b> Designed a clean and user-friendly web application with Streamlit, enabling seamless search, filtering, and instant display of sentiment results.</li>
+                    <li><b>Automated Workflow:</b> Streamlined the entire process—from news updates and sentiment analysis to data presentation and error handling—ensuring a robust and "just works" experience for the user.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Approach</h3> <ul class="project-list">
+                    <li>The entire application was developed in Python, prioritizing flexibility, modularity, and transparency.</li>
+                    <li>Real-time financial news is sourced via the NewsAPI, while sentiment scoring is powered by the FinBERT model.</li>
+                    <li>The interactive visualizations and the web application itself were constructed using Streamlit and Plotly.</li>
+                    <li>The codebase is designed to be simple, modular, and easily deployable or extensible by other developers.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Reflections</h3> <p>
+                    This project significantly advanced my skills in Natural Language Processing (NLP), sophisticated data visualization, and the practical development of user-facing web applications. The most gratifying aspect is seeing how it translates complex technical capabilities into a simple, highly useful tool for anyone seeking a competitive edge in finance.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3> <div class="captioned-image">
+                    <img src="assests/bert_sentiment/screenshot1.jpg" alt="Dashboard Interface Screenshot">
+                    <p class="img-caption">The main user interface of the Real-Time Financial News Sentiment Dashboard.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests/bert_sentiment/screenshot2.jpg" alt="Apple Stock Sentiment Analysis Example">
+                    <p class="img-caption">Sentiment analysis results for Apple stock, showcasing positive, negative, and neutral distribution.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests/bert_sentiment/Screenshot3.jpg" alt="List of 30 Apple News Articles">
+                    <p class="img-caption">A view of the latest 30 news articles retrieved for Apple, with their corresponding sentiment scores.</p>
+                </div>
+            </div>
+
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>Languages:</strong> Python 3</li>
+                    <li><strong>NLP Models:</strong> Transformers (FinBERT)</li>
+                    <li><strong>Data Manipulation:</strong> Pandas</li>
+                    <li><strong>Web Application Framework:</strong> Streamlit</li>
+                    <li><strong>Visualization:</b> Plotly</li>
+                    <li><strong>APIs:</strong> NewsAPI</li>
+                </ul>
+                <div class="project-links-bottom">
+                  <!--   <a href="https://github.com/yourusername/real-time-sentiment-dashboard" target="_blank" rel="noopener noreferrer" class="project-btn btn-code"><i class="fab fa-github"></i> View Code on GitHub</a>-->
+                    </div>
+            </div>
+
+        </div> </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <!--  <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">-->
+              <!--   <i class="fab fa-github"></i>-->
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> </body>
+</html>
