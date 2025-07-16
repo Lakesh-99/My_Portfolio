@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Vendohub | MLM E-commerce Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a> <!--  <a href="skills.html">Skills</a>  -->
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container">
+            <div class="captioned-image">
+                <img src="assests/vendohub/intro.png" alt="Data Center Monitor Dashboard" class="project-cover-image">
+                <p class="img-caption">
+                    The main dashboard displaying key data center metrics like PUE, power consumption, and temperature.
+                </p>
+            </div>
+            <h1 class="project-detail-title">Vendohub: A Comprehensive MLM E-commerce Platform</h1>
+            <p class="project-subtitle">
+                Designing a robust, scalable database architecture for a Multi-Level Marketing (MLM) e-commerce system.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-database"></i> Database Design &middot; SQL &middot; E-commerce &middot; MLM Systems
+                </span>
+            </p>
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Introduction to Vendohub</h3>
+                <p>
+                    Vendohub is an MLM e-commerce platform meticulously designed to streamline complex operations from user interaction to financial calculations. Its core purpose is to provide a robust framework for managing various aspects of an MLM business within an e-commerce environment.
+                </p>
+                <p>
+                    This project focuses on the foundational ER (Entity-Relationship) Diagram, which illustrates the relational structure of Vendohub's database. It highlights key entities such as Users, Products, MLM Networks, Orders, and Commissions, along with the critical relationships connecting them, ensuring data integrity and comprehensive functionality.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Core Database Components</h3>
+                <p>The Vendohub database is structured around several interconnected table categories, each handling specific functionalities of the MLM e-commerce platform.</p>
+                
+                <h4>User Management Tables</h4>
+                <ul class="project-list">
+                    <li>**Users:** Stores essential user details.</li>
+                    <li>**User Addresses:** Manages both billing and shipping addresses for users.</li>
+                </ul>
+
+                <h4>MLM Structure Tables</h4>
+                <ul class="project-list">
+                    <li>**IBO Ranks:** Defines various ranks within the MLM network for Independent Business Owners (IBOs).</li>
+                    <li>**IBO Network:** Tracks the intricate hierarchy and relationships within the MLM network.</li>
+                    <li>**IBO PV History:** Logs personal and team Personal Volume (PV) values for commission calculations.</li>
+                    <li>**Rank Commission Rates:** Defines specific commission rates applicable to different IBO ranks.</li>
+                </ul>
+
+                <h4>Product Management Tables</h4>
+                <ul class="project-list">
+                    <li>**Categories:** Organizes products into logical categories.</li>
+                    <li>**Products:** Stores detailed information about each product, including price and associated PV value.</li>
+                </ul>
+
+                <h4>Shopping Cart Tables</h4>
+                <ul class="project-list">
+                    <li>**Shopping Cart:** Tracks active shopping cart sessions for users.</li>
+                    <li>**Cart Items:** Manages individual products added to a user's shopping cart.</li>
+                </ul>
+
+                <h4>Payment Management Tables</h4>
+                <ul class="project-list">
+                    <li>**Payment Types:** Defines all accepted payment types.</li>
+                    <li>**Payment Methods:** Manages user-specific payment options.</li>
+                    <li>**Bank, Card, and UPI Payment Details:** Securely stores sensitive payment information.</li>
+                </ul>
+
+                <h4>Order Management Tables</h4>
+                <ul class="project-list">
+                    <li>**Orders:** Captures comprehensive details of user orders.</li>
+                    <li>**Order Items:** Details the specific products included within each order.</li>
+                    <li>**Order Payments:** Logs payment details associated with individual orders.</li>
+                </ul>
+
+                <h4>Commission Management Tables</h4>
+                <ul class="project-list">
+                    <li>**Commission Earnings:** Tracks all commissions earned by IBOs.</li>
+                    <li>**Commission Payments:** Logs payouts of earned commissions.</li>
+                    <li>**Commission Payment Details:** Tracks specific earnings components within commission payouts.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Review Management System</h3>
+                <p>Vendohub incorporates a comprehensive review system to gather feedback and maintain platform integrity.</p>
+                
+                <h4>Product Review Management</h4>
+                <ul class="project-list">
+                    <li>**Product Reviews:** Manages user feedback and ratings for products.</li>
+                    <li>**Verified Purchase:** Ensures that reviews originate from actual buyers.</li>
+                    <li>**Status:** Tracks the moderation status of product reviews.</li>
+                </ul>
+
+                <h4>IBO Review Management</h4>
+                <ul class="project-list">
+                    <li>**IBO Reviews:** Allows users to provide feedback on Independent Business Owners.</li>
+                    <li>**Review Type:** Categorizes reviews by service quality, product knowledge, or responsiveness.</li>
+                    <li>**Verified Transaction:** Ensures the authenticity of IBO reviews through transaction verification.</li>
+                </ul>
+
+                <h4>Review Votes Management</h4>
+                <ul class="project-list">
+                    <li>**Review Votes:** Tracks helpfulness votes for both product and IBO reviews.</li>
+                    <li>Ensures unique votes per review per user.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Security Features</h3>
+                <p>The database design incorporates several features to ensure data security and integrity:</p>
+                <ul class="project-list">
+                    <li>**Encrypted Sensitive Data:** Implements encryption for critical data fields, such as account numbers.</li>
+                    <li>**Unique Constraints:** Prevents duplicate entries within tables, maintaining data accuracy.</li>
+                    <li>**Controlled Data Access:** Ensures data integrity and security through relational integrity rules.</li>
+                </ul>
+            </div>
+            
+            <div class="project-section-block">
+                <h3 class="section-heading">Conclusion</h3>
+                <p>
+                    Vendohub's database architecture provides a robust, scalable, and secure foundation essential for managing complex MLM e-commerce operations. It is designed to ensure data integrity, enhance security, and deliver comprehensive functionality across the entire platform.
+                </p>
+                <div class="project-links-bottom">
+                   <!--  <a href="https://github.com/yourusername/vendohub-database-design-repo" target="_blank" rel="noopener noreferrer" class="project-btn btn-code"><i class="fab fa-github"></i> View ERD on GitHub (Placeholder)</a> -->
+                    </div>
+            </div>
+
+        </div> </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <!--  <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">-->
+              <!--   <i class="fab fa-github"></i>-->
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>
