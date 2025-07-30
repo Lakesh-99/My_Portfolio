@@ -8,6 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Added simple styling for the category titles for better separation */
+        .projects-category-title {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+            color: #333;
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,9 +44,62 @@
         <section class="section projects-page">
             <div class="container">
                 <h2 class="page-title">My Projects</h2>
-                <p class="intro">Explore my data science and machine learning projects below. Click on a project title to reveal more details and access the full project page or code repository.</p>
+                <p class="intro">Explore my projects below, categorized into Business Intelligence and Data Science. Click on a project title to reveal more details and access the full project page or code repository.</p>
 
                 <div class="projects-accordion">
+
+                    
+
+                    <div class="project-accordion-item">
+                        <div class="project-accordion-header">
+                            <div class="project-header-text">
+                                <h3 class="project-title">Superstore Retail Performance Analysis</h3>
+                                <div class="tech-stack project-header-tech-stack"><strong>Stack:</strong> Power BI, SQL, Data Modeling, Excel</div>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="project-accordion-content">
+                            <p class="project-description">Built a dynamic Power BI dashboard to monitor sales and profit across 230+ cities. Collaborated with users to define metrics and develop executive-level visualizations. Integrated data from SQL and flat files into a centralized model for analysis.</p>
+                            <div class="project-accordion-buttons">
+                                <a href="superstore.html" class="project-btn btn-details">Project Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-accordion-item">
+                        <div class="project-accordion-header">
+                            <div class="project-header-text">
+                                <h3 class="project-title">Economic Indicators Dashboard</h3>
+                                <div class="tech-stack project-header-tech-stack"><strong>Stack:</strong> Power BI, SQL, Data Blending, Strategic Analysis</div>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="project-accordion-content">
+                            <p class="project-description">Developed a Power BI dashboard for key financial KPIs, cutting manual reporting by 40%. Worked with stakeholders to meet strategic needs and analyzed trends to provide actionable recommendations that influenced planning discussions.</p>
+                            <div class="project-accordion-buttons">
+                                <a href="indicators.html" class="project-btn btn-details">Project Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-accordion-item">
+                        <div class="project-accordion-header">
+                            <div class="project-header-text">
+                                <h3 class="project-title">Cryptocurrency Market Analytics Dashboard</h3>
+                                <div class="tech-stack project-header-tech-stack"><strong>Stack:</strong> Power BI, Python, APIs, Data Automation</div>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="project-accordion-content">
+                             <p class="project-description">Created a Power BI dashboard for live crypto market data. Automated data ingestion and cleaning with Python and SQL to ensure accuracy. The dashboard enabled data-driven investment discussions by simplifying complex market trends for stakeholders.</p>
+                            <div class="project-accordion-buttons">
+                                <a href="crypto.html" class="project-btn btn-details">Project Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
                     <div class="project-accordion-item">
                         <div class="project-accordion-header">
                             <div class="project-header-text">
@@ -48,7 +112,7 @@
                             <p class="project-description">Developed a complete system for live monitoring of data center health and energy use. This includes gathering sensor data, processing it on the fly for metrics like PUE, finding anomalies, and showing everything on a web dashboard.</p>
                             <div class="project-accordion-buttons">
                                 <a href="datacenter_monitor.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -62,7 +126,7 @@
                             <p class="project-description">Developed a robust time-series forecasting model to predict crop yields under varying climate conditions. Utilized historical weather and agricultural data to provide actionable insights for farmers and policymakers, enhancing food security strategies.</p>
                             <div class="project-accordion-buttons">
                                 <a href="climate.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -78,7 +142,7 @@
                             <p class="project-description">Implemented a deep learning solution for classifying brain tumors from MRI images. Focused on model accuracy, interpretability (using techniques like Grad-CAM), and efficient deployment for potential clinical application.</p>
                             <div class="project-accordion-buttons">
                                 <a href="braintumor.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -94,7 +158,7 @@
                             <p class="project-description">Developed a forecasting system for urban energy consumption, incorporating exogenous variables and handling data anomalies to provide more robust and reliable predictions for grid optimization and smart city planning. Included a Streamlit dashboard for interactive visualization.</p>
                             <div class="project-accordion-buttons">
                                 <a href="energy.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -110,7 +174,7 @@
                             <p class="project-description">Created a web dashboard that performs real-time sentiment analysis on financial news articles using a fine-tuned BERT model (FinBERT). Provides instant insights into market sentiment, aiding investment decisions. Integrated with NewsAPI for data retrieval and Plotly for interactive visualizations.</p>
                             <div class="project-accordion-buttons">
                                 <a href="news.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -126,7 +190,7 @@
                             <p class="project-description">Developed an automated deals agent to track product prices across e-commerce sites and predict optimal buying times, especially for seasonal sales like Black Friday. Users receive SMS notifications via Twilio when prices drop significantly, based on historical data analysis.</p>
                             <div class="project-accordion-buttons">
                                 <a href="agent.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -140,16 +204,14 @@
                         </div>
                         <div class="project-accordion-content">
                             <p class="project-description">
-                                Designed a comprehensive, robust, and scalable database architecture for Vendohub, an MLM e-commerce platform. 
-                            </p>
-                            <p class="project-description">
-                                The project emphasizes data integrity, security (including encrypted sensitive data and unique constraints), and comprehensive functionality, highlighted through a detailed ER Diagram.
+                                Designed a comprehensive, robust, and scalable database architecture for Vendohub, an MLM e-commerce platform. The project emphasizes data integrity, security (including encrypted sensitive data and unique constraints), and comprehensive functionality, highlighted through a detailed ER Diagram.
                             </p>
                             <div class="project-accordion-buttons">
                                 <a href="vendohub.html" class="project-btn btn-details">Project Details</a>
-                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div> 
             </div>
         </section>
@@ -165,7 +227,6 @@
         <div class="social">
             <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fab fa-linkedin-in"></i> 
-            </a>
             </a>
             <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
                 <i class="fas fa-envelope"></i>
