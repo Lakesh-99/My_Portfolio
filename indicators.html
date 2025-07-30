@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Economic Indicators Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <h1 class="project-detail-title">Economic Indicators Dashboard</h1>
+            <p class="project-subtitle">
+                An executive dashboard providing at-a-glance insights into key global economic and financial KPIs to support strategic decision-making.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-tags"></i> Power BI &middot; SQL &middot; Data Blending &middot; Strategic Analysis &middot; APIs
+                </span>
+            </p>
+
+            
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3>
+                <p>
+                    Business leaders needed a quick, reliable way to assess the global economic climate without sifting through multiple dense reports. The motivation was to create a self-service Power BI dashboard that aggregates and visualizes key data from disparate sources like the World Bank and IMF, enabling proactive and informed strategic planning regarding market expansion and risk management.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Features</h3>
+                <ul class="project-list">
+                    <li><b>Consolidated KPI View:</b> Displays critical indicators like GDP, CPI (inflation), unemployment rates, and major stock market indices on a single, clean interface.</li>
+                    <li><b>Country-Specific Drill-Down:</b> Allows users to filter the entire dashboard by country or region to analyze local economic health and compare performance between nations.</li>
+                    <li><b>Interactive Time-Series Analysis:</b> All charts are interactive, showing historical trends for each indicator to help stakeholders understand long-term patterns and economic cycles.</li>
+                    <li><b>Self-Service Analytics:</b> Empowered executives to explore data and answer their own questions, which successfully reduced ad-hoc reporting requests by 40%.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Data & Reporting Workflow</h3>
+                <ul class="project-list">
+                    <li>Data was sourced from the public REST APIs of international organizations like the World Bank and the International Monetary Fund (IMF).</li>
+                    <li>Power BI's data blending capabilities were used to join these disparate datasets on common fields like country and date, creating a unified data source.</li>
+                    <li>Calculated fields were created within Power BI to standardize metrics from different sources and derive new insights like quarter-over-quarter growth.</li>
+                    <li>The finalized, interactive dashboard was published to Power BI Server, with scheduled data extract refreshes to ensure the information remains current.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Architecture</h3>
+                <ul class="project-list">
+                    <li><b>BI Platform:</b> Power BI Desktop was used for all development, and Power BI Server was used for publishing, sharing, and managing automated refreshes.</li>
+                    <li><b>Data Integration:</b> Leveraged Power BI's built-in Web Data Connectors to pull data from REST APIs and its native SQL connectors for internal databases.</li>
+                    <li><b>Analytical Engine:</b> Utilized Power BI's powerful built-in functions for creating time-series charts, forecasting, and complex Level of Detail (LOD) calculations.</li>
+                    <li><b>Data Sources:</b> World Bank Open Data API, International Monetary Fund (IMF) Data API, and internal company SQL databases.</li>
+                    <li><b>Dashboard Design:</b> Focused on a clean, minimalist UI/UX with clear color-coding and descriptive tooltips to make complex data accessible to a non-technical executive audience.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3>
+                <div class="captioned-image">
+                    <img src="assests1/gdp1.jpg" alt="Country Comparison View">
+                    <p class="img-caption">A comparative view allowing leaders to benchmark the economic performance of several countries simultaneously.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests1/gdp2.jpg" alt="Inflation Trend Analysis">
+                    <p class="img-caption">Historical trend lines for inflation rates, with built-in forecasting to project future movements.</p>
+                </div>
+            </div>
+
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>BI Platform:</strong> Power BI (Desktop & Server)</li>
+                    <li><strong>Data Sources:</strong> REST APIs (World Bank, IMF)</li>
+                    <li><strong>Database:</strong> SQL</li>
+                    <li><strong>Core Concepts:</strong> Data Blending, Business Intelligence, KPI Dashboards, Strategic Analysis</li>
+                </ul>
+                <div class="project-links-bottom">
+                 </div>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Impact</h3>
+                <p>
+                    This dashboard became the go-to resource for the leadership team during strategic reviews, significantly reducing time spent on manual data gathering. It enabled more dynamic, data-driven conversations about market expansion and risk assessment. The project was a masterclass in data blending and storytelling, highlighting how to effectively combine heterogeneous data sources and distill complex macroeconomic topics into a simple, compelling visual narrative for an executive audience.
+                </p>
+            </div>
+
+        </div> 
+    </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>

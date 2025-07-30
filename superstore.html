@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Superstore Retail Performance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <h1 class="project-detail-title">Superstore Retail Performance Analysis</h1>
+            <p class="project-subtitle">
+                A dynamic and interactive Power BI dashboard for visualizing sales, profit, and logistics across a national retail chain.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-tags"></i> Power BI &middot; DAX &middot; SQL &middot; Data Modeling &middot; ETL
+                </span>
+            </p>
+
+            
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3>
+                <p>
+                    Analyzing vast, siloed retail data from spreadsheets is inefficient and prone to errors. The motivation for this project was to create a centralized, single source of truth for business monitoring. I aimed to transform raw transactional data into an interactive dashboard that would empower business leaders to make faster, more informed strategic decisions.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Features</h3>
+                <ul class="project-list">
+                    <li><b>Interactive Visualizations:</b> Allows users to dynamically filter data by region, category, and time period, and drill down from a high-level overview to granular details.</li>
+                    <li><b>Holistic Performance Tracking:</b> Consolidates sales, profit, order quantities, and returns into a single, cohesive view to track the complete lifecycle of a sale.</li>
+                    <li><b>Geospatial Analysis:</b> A map visualization identifies top-performing and underperforming states and cities, revealing regional strengths and weaknesses.</li>
+                    <li><b>Automated Data Refresh:</b> The dashboard is configured for automated daily refreshes, ensuring that the insights always reflect the latest business data without manual intervention.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Data & Reporting Workflow</h3>
+                <ul class="project-list">
+                    <li>Sales and product data were extracted from a SQL database, while regional targets and returns data were integrated from Excel files.</li>
+                    <li>Power Query was used to perform all ETL (Extract, Transform, Load) operations, including data cleaning, merging tables, and creating a structured data model.</li>
+                    <li>Complex business logic and KPIs (e.g., Profit Margin, Year-over-Year Growth) were created using DAX (Data Analysis Expressions).</li>
+                    <li>The finalized data model feeds the interactive visuals on the dashboard, providing fast and consistent query performance.</li>
+                    <li>The report was published to the Power BI service for secure sharing with stakeholders and to manage scheduled data refreshes.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Architecture</h3>
+                <ul class="project-list">
+                    <li><b>BI Platform:</b> Developed in Power BI Desktop and deployed to the Power BI Service for cloud-based access and collaboration.</li>
+                    <li><b>Data Transformation & Modeling:</b> Utilized Power Query for all ETL processes. A star schema data model was designed in Power BI to optimize performance and clarity.</li>
+                    <li><b>Analytical Language:</b> Wrote advanced DAX measures and calculated columns to derive key business insights that were not available in the source data.</li>
+                    <li><b>Data Sources:</b> Connected to a SQL Server database for core sales transactions and integrated with multiple Excel workbooks for supplementary data.</li>
+                    <li><b>Visualization Engine:</b> Employed a range of Power BI's native visuals, including maps, bar charts, slicers, cards, and matrices, to build a user-friendly interface.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3>
+                <div class="captioned-image">
+                    <img src="assests1/superstore1.jpg" alt="Category Deep Dive Screenshot">
+                    <p class="img-caption">Users can drill down into specific product categories to analyze sales trends and profitability.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests1/superstore.jpg" alt="Geographic Sales Analysis Screenshot">
+                    <p class="img-caption">Geospatial analysis highlights sales concentration and helps identify opportunities for regional growth.</p>
+                </div>
+            </div>
+
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>BI Platform:</strong> Power BI (Desktop & Service)</li>
+                    <li><strong>Languages:</strong> DAX, SQL</li>
+                    <li><strong>Data Integration:</strong> Power Query (ETL)</li>
+                    <li><strong>Database:</strong> SQL Server</li>
+                    <li><strong>Supporting Tools:</strong> Microsoft Excel</li>
+                    <li><strong>Core Concepts:</strong> Data Modeling, Business Intelligence, KPI Reporting</li>
+                </ul>
+                <div class="project-links-bottom">
+                 </div>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Impact</h3>
+                <p>
+                    This project was a fantastic exercise in transforming raw, tabular data into actionable business intelligence. It replaced hours of manual spreadsheet analysis with a fully automated, self-service analytics solution for stakeholders. The insights generated directly helped identify the most profitable product categories and regions. The project reinforced the critical importance of a solid data model as the foundation for any successful BI solution and provided deep experience in writing complex DAX queries to design user-centric dashboards that tell a clear story.
+                </p>
+            </div>
+
+        </div> 
+    </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>

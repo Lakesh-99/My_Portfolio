@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Cryptocurrency Analytics Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top-row">
+                <a href="index.html" class="site-title">
+                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                </a>
+            </div>
+            <div class="header-bottom-row">
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a> 
+                    <a href="projects.html" class="active">Projects</a>
+                    <a href="resume.html">Resume</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section project-detail-page"> 
+        <div class="container"> 
+            <h1 class="project-detail-title">Cryptocurrency Market Analytics Dashboard</h1>
+            <p class="project-subtitle">
+                A live Power BI dashboard that aggregates and visualizes real-time and historical cryptocurrency market data for comprehensive financial analysis.
+                <br>
+                <span class="project-tech-summary">
+                    <i class="fas fa-tags"></i> Power BI &middot; Python &middot; APIs &middot; Data Automation &middot; DAX
+                </span>
+            </p>
+
+            
+
+            <div class="project-section-block"> 
+                <h3 class="section-heading">Project Overview</h3>
+                <p>
+                    The cryptocurrency market is incredibly volatile and operates 24/7, making manual tracking across different exchanges and news sources nearly impossible. I built this automated dashboard to consolidate key market data into a single, unified view, allowing for efficient tracking of assets and analysis of historical trends to better understand market dynamics.
+                </p>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Key Features</h3>
+                <ul class="project-list">
+                    <li><b>Live Market Data:</b> Integrates with the CoinGecko API to display real-time prices, market capitalization, trading volume, and daily percentage changes for hundreds of cryptocurrencies.</li>
+                    <li><b>Historical Trend Analysis:</b> Visualizes historical price and volume data, allowing users to analyze long-term trends, identify patterns, and understand coin performance over months or years.</li>
+                    <li><b>Automated Data Pipeline:</b> A Python script runs on a schedule to automatically fetch, clean, and load the latest market data, ensuring the dashboard is always up-to-date without any manual effort.</li>
+                    <li><b>Interactive Drill-Down:</b> Users can select specific cryptocurrencies from a list or slicer to see detailed charts and metrics, comparing their performance against others or the market as a whole.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Data & Reporting Workflow</h3>
+                <ul class="project-list">
+                    <li>A Python script connects to a public cryptocurrency REST API to fetch live and historical market data in JSON format.</li>
+                    <li>The script cleans and transforms the raw JSON data using the Pandas library into structured, tabular formats.</li>
+                    <li>This processed data is then loaded directly into the Power BI data model, serving as the dashboard's foundation.</li>
+                    <li>The Python script is automated to run periodically, ensuring the dataset remains fresh for timely analysis.</li>
+                    <li>Within Power BI, DAX is used to write measures for advanced metrics like moving averages, volatility calculations, and portfolio value.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Technical Architecture</h3>
+                <ul class="project-list">
+                    <li><b>BI Platform:</b> Power BI Desktop was used for building the entire report, data model, and visualizations.</li>
+                    <li><b>Data Automation & ETL:</b> A Python script leveraging the `Requests` library for API calls and `Pandas` for data manipulation served as the primary ETL tool.</li>
+                    <li><b>Data Source:</b> Live data was sourced from the public CoinGecko REST API.</li>
+                    <li><b>Analytical Language:</b> DAX (Data Analysis Expressions) was used within Power BI for creating advanced time-intelligence functions and custom performance metrics.</li>
+                    <li><b>Visualization Engine:</b> Utilized a combination of native Power BI visuals, including line charts for historical trends, cards for live KPIs, and slicers for coin selection.</li>
+                </ul>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Visual Highlights</h3>
+                <div class="captioned-image">
+                    <img src="assests1/crypto1.jpg" alt="Historical Price Chart for a single Cryptocurrency">
+                    <p class="img-caption">A detailed view showing the historical price chart for Bitcoin, with volume data and key moving averages.</p>
+                </div>
+                <div class="captioned-image">
+                    <img src="assests1/crypto2.jpg" alt="Market Overview Table">
+                    <p class="img-caption">A sortable table displaying key metrics for the top 100 cryptocurrencies, allowing for easy comparison.</p>
+                </div>
+            </div>
+
+            <div class="project-tech-summary-bottom">
+                <h3>Full Tech Stack Used</h3>
+                <ul class="tech-stack-list">
+                    <li><strong>BI Platform:</strong> Power BI Desktop</li>
+                    <li><strong>Languages:</strong> Python, DAX</li>
+                    <li><strong>Python Libraries:</strong> Pandas, Requests</li>
+                    <li><strong>Data Sources:</strong> REST APIs (CoinGecko)</li>
+                    <li><strong>Core Concepts:</strong> Data Automation, API Integration, Financial Analysis</li>
+                </ul>
+                <div class="project-links-bottom">
+                 </div>
+            </div>
+
+            <div class="project-section-block">
+                <h3 class="section-heading">Learnings & Impact</h3>
+                <p>
+                    This project was an excellent deep dive into API integration and data automation. I learned how to handle real-time data streams, manage API rate limits, and structure a Python-driven ETL process to feed a BI dashboard. It created a powerful, personal tool for navigating the crypto market, replacing the need to check multiple websites with a single, reliable dashboard. The experience solidified my skills in connecting live, external data sources to Power BI for dynamic and impactful reporting.
+                </p>
+            </div>
+
+        </div> 
+    </section>
+
+    <div class="divider">
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path d="M0,0 C600,100 600,0 1200,100 L1200,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <footer id="contact">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i> 
+            </a>
+            <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>
