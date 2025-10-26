@@ -2,128 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="assests/logo.png">
-    <title>Real-time Data Center Health & Efficiency Monitor</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>Real-Time Data Center Health & Efficiency Monitor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <header>
         <div class="header-content">
             <div class="header-top-row">
                 <a href="index.html" class="site-title">
-                    <h1>LAKESH KUMAR SURYADEVARA</h1> 
+                    <h1>LAKESH KUMAR SURYADEVARA</h1>
                 </a>
             </div>
             <div class="header-bottom-row">
                 <nav class="nav">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About</a> 
+                    <a href="about.html">About</a>
                     <a href="projects.html" class="active">Projects</a>
-                    <a href="resume.html">Resume</a> 
+                    <a href="resume.html">Resume</a>
                     <a href="contact.html">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section class="section project-detail-page"> 
-        <div class="container"> 
+    <section class="section project-detail-page">
+        <div class="container">
             <div class="captioned-image">
                 <img src="assests/datacenter/intro.png" alt="Data Center Monitor Dashboard" class="project-cover-image">
-                <p class="img-caption">
-                    The main dashboard displaying key data center metrics like PUE, power consumption, and temperature.
-                </p>
+                <p class="img-caption">Main dashboard displaying key data center metrics like PUE, power consumption, and temperature.</p>
             </div>
-            <h1 class="project-detail-title">Real-time Data Center Health & Efficiency Monitor</h1>
+
+            <h1 class="project-detail-title">Real-Time Data Center Health & Efficiency Monitor</h1>
             <p class="project-subtitle">
-                An automated system for real-time monitoring, anomaly detection, and efficiency optimization of data center operations.
+                A complete real-time monitoring, anomaly detection, and performance optimization system for large-scale data centers.
                 <br>
                 <span class="project-tech-summary">
-                    <i class="fas fa-tags"></i> Python &middot; PySpark &middot; Kafka &middot; SQLite &middot; Flask &middot; Docker &middot; SQL &middot; Pandas &middot; NumPy
+                    <i class="fas fa-tags"></i> Python · PySpark · Kafka · SQLite · Flask · Docker · SQL · Pandas · NumPy
                 </span>
             </p>
 
-            
-
-            <div class="project-section-block"> 
-                <h3 class="section-heading">Project Overview</h3> 
+            <div class="project-section-block">
+                <h3 class="section-heading">Project Overview</h3>
                 <p>
-                    This project focuses on building a complete system to monitor the health and energy efficiency of a data center in real-time. It aims to gather massive amounts of sensor data, process it instantly to calculate important metrics like Power Usage Effectiveness (PUE), identify unusual activities, and present all this information on an easy-to-understand dashboard. The main goal is to help data center managers quickly spot problems, ensure smooth operations, and make decisions that save energy and costs.
+                    This project delivers a cohesive real-time solution for monitoring the health and energy efficiency of data centers. It ingests continuous IoT sensor data, computes metrics such as Power Usage Effectiveness (PUE), detects anomalies, and visualizes live operational insights through a responsive web dashboard. The system empowers operators to identify and address issues rapidly, enhancing uptime, performance, and sustainability.
                 </p>
             </div>
 
             <div class="project-section-block">
-                <h3 class="section-heading">Key Features</h3> 
+                <h3 class="section-heading">Key Features</h3>
                 <ul class="project-list">
-                    <li><b>Real-time Data Ingestion:</b> Continuously collects simulated sensor data (power, temperature, CPU usage) from various data center devices.</li>
-                    <li><b>Live Data Processing:</b> Instantly processes incoming data streams to calculate key performance indicators and detect anomalies.</li>
-                    <li><b>PUE Calculation:</b> Automatically calculates Power Usage Effectiveness (PUE) to assess data center energy efficiency in real-time.</li>
-                    <li><b>Anomaly Detection:</b> Identifies and alerts on unusual sensor readings or operational thresholds that might indicate a problem (e.g., overheating servers, power spikes).</li>
-                    <li><b>Historical Data Storage:</b> Stores processed metrics and anomaly alerts for long-term analysis and trend identification.</li>
-                    <li><b>Interactive Dashboard:</b> Provides a user-friendly web interface to visualize current and historical data, making it easy to monitor the data center's status.</li>
+                    <li><strong>Real-Time Data Ingestion:</strong> Collects continuous streams of simulated sensor data, including power, temperature, and CPU usage.</li>
+                    <li><strong>Live Data Processing:</strong> Processes data on-the-fly to calculate KPIs and detect operational anomalies.</li>
+                    <li><strong>PUE Computation:</strong> Automatically evaluates Power Usage Effectiveness to track real-time energy performance.</li>
+                    <li><strong>Anomaly Detection:</strong> Identifies irregular readings signaling conditions like overheating or unexpected load spikes.</li>
+                    <li><strong>Historical Data Retention:</strong> Stores processed metrics for long-term trend analysis and optimization studies.</li>
+                    <li><strong>Interactive Dashboard:</strong> Enables dynamic visualization of live metrics and system status for efficient monitoring.</li>
                 </ul>
             </div>
 
             <div class="project-section-block">
-                <h3 class="section-heading">How It Works (Workflow Overview)</h3> 
+                <h3 class="section-heading">Workflow Overview</h3>
                 <ul class="project-list">
-                    <li>A **Python** program simulates IoT sensors generating diverse data (power, temp, CPU) from servers, CRACs, and PDUs within a data center environment.
-                    </li><li>This simulated data is immediately sent to a **Kafka** messaging system, acting as the central hub for incoming sensor readings.
-                    </li><li>A **PySpark streaming application** continuously consumes data from Kafka, parsing JSON messages, extracting relevant metrics, and enriching the data with derived fields like room and rack information.
-                    </li><li>The **PySpark** processor performs real-time aggregations (e.g., 5-minute averages per room, 1-minute overall data center metrics including PUE, IT power, cooling power) and applies threshold-based anomaly detection for critical parameters.
-                    </li><li>Processed data, including aggregated metrics and anomaly alerts, is then stored into an **SQLite database** structured with dimension and fact tables for historical analysis.
-                    </li><li>A **Flask web application** retrieves the latest processed data from the database and displays it on an interactive dashboard, providing real-time operational insights into the data center's health and efficiency.
-                </li></ul>
+                    <li>A Python script simulates IoT sensors generating live readings (power, CPU load, temperature) across critical infrastructure.</li>
+                    <li>Sensor streams are transmitted via <strong>Kafka</strong>, which serves as the data ingestion pipeline.</li>
+                    <li><strong>PySpark Structured Streaming</strong> consumes messages continuously, performs JSON parsing, enrichment, and real-time computation of derived features (e.g., PUE, room-level metrics).</li>
+                    <li>Aggregated and validated data is persisted into an <strong>SQLite</strong> database using a star-schema design for performance efficiency.</li>
+                    <li>A <strong>Flask web app</strong> dynamically queries and renders this data to provide a live operational dashboard.</li>
+                </ul>
             </div>
 
             <div class="project-section-block">
-                <h3 class="section-heading">Behind the Scenes (Technical Architecture)</h3> 
+                <h3 class="section-heading">System Architecture</h3>
                 <ul class="project-list">
-                    <li><b>Data Generation:</b> Custom **Python** script using `kafka-python` and `NumPy` to simulate diverse IoT sensor data streams.
-                    </li><li><b>Messaging Queue:</b> **Kafka** and **Zookeeper** set up via **Docker Compose** for high-throughput, fault-tolerant ingestion of streaming sensor data.
-                    </li><li><b>Stream Processing:</b> **PySpark Structured Streaming** for real-time data ingestion from Kafka, complex aggregations, windowing operations, and threshold-based anomaly detection.
-                    </li><li><b>Data Storage:</b> **SQLite database** designed with a star schema (dimension tables: `dim_device`, `dim_location`; fact tables: `fact_sensor_readings`, `fact_pue_metrics`, `fact_anomalies`) for efficient storage and retrieval of time-series and event data.
-                    </li><li><b>Backend Logic:</b> **Python** scripts for Kafka consumption (`pyspark_java.py`) and database interaction (`sql.py`, `sql1.py`), including functions to load processed data into the SQLite database.
-                    </li><li><b>Dashboard:</b> A **Flask** web application providing a dynamic dashboard to visualize real-time PUE, power metrics, temperature, and system status, enhancing operational visibility.
-                    </li><li><b>Orchestration:</b> **Python** scripts (`pyspark2.py` / `pyspark.py`) leveraging `subprocess` to manage the lifecycle of Docker containers, Kafka topics, and Python components, ensuring seamless system startup and shutdown.
-                </li></ul>
+                    <li><strong>Data Simulation:</strong> Python with NumPy and Kafka APIs to stream synthetic IoT data.</li>
+                    <li><strong>Messaging Layer:</strong> Kafka + Zookeeper managed by Docker Compose for durability and scalability.</li>
+                    <li><strong>Stream Processing:</strong> PySpark Structured Streaming handling computation, aggregation, and anomaly logic.</li>
+                    <li><strong>Storage:</strong> SQLite database organized into dimension and fact tables for structured data analysis.</li>
+                    <li><strong>Backend & API Layer:</strong> Flask backend for querying processed data and serving dashboard APIs.</li>
+                    <li><strong>Visualization:</strong> Flask-embedded dashboard for interactive analytics visualization.</li>
+                    <li><strong>Containerization:</strong> Full setup controlled using Docker and orchestrated via Python subprocess automation.</li>
+                </ul>
             </div>
 
             <div class="project-section-block">
-                <h3 class="section-heading">Visual Highlights</h3> 
+                <h3 class="section-heading">Visual Highlights</h3>
                 <div class="captioned-image">
                     <img src="assests/datacenter/dashboard.jpg" alt="Dashboard Main View">
-                    <p class="img-caption">A screenshot of the main dashboard, showing current PUE, power consumption (Total, IT), and average temperature, along with system status.</p>
+                    <p class="img-caption">Dashboard displaying PUE, power breakdowns, temperature trends, and alert notifications in real-time.</p>
                 </div>
-                
-                </div>
+            </div>
 
             <div class="project-tech-summary-bottom">
-                <h3>Full Tech Stack Used</h3>
+                <h3>Full Tech Stack</h3>
                 <ul class="tech-stack-list">
                     <li><strong>Languages:</strong> Python</li>
-                    <li><strong>Big Data Framework:</strong> PySpark</li>
+                    <li><strong>Streaming Framework:</strong> PySpark</li>
                     <li><strong>Messaging:</strong> Kafka, Zookeeper</li>
                     <li><strong>Database:</strong> SQLite</li>
                     <li><strong>Web Framework:</strong> Flask</li>
-                    <li><strong>Containerization:</strong> Docker, Docker Compose</li>
-                    <li><strong>Data Processing Libraries:</strong> Pandas, NumPy</li>
-                    <li><strong>Orchestration:</strong> Custom Python Scripts</li>
+                    <li><strong>Orchestration & Deployment:</strong> Docker, Docker Compose</li>
+                    <li><strong>Libraries:</strong> Pandas, NumPy</li>
                 </ul>
-                <div class="project-links-bottom">
-                    </div>
             </div>
 
             <div class="project-section-block">
-                <h3 class="section-heading">Learnings & Impact</h3> 
+                <h3 class="section-heading">Key Learnings & Impact</h3>
                 <p>
-                    This project provided hands-on experience in building a complete **real-time data pipeline**, from raw data generation to dashboard visualization. I gained significant experience with **streaming data processing** using **PySpark**, setting up and managing **Kafka** for high-throughput data ingestion, and designing effective database schemas for time-series data. The project demonstrated my ability to integrate various technologies to deliver a practical solution for **operational monitoring and efficiency optimization**. It enhanced my skills in **anomaly detection**, **data aggregation**, and presenting complex data in an understandable format for decision-makers.
+                    This project offered in-depth exposure to <strong>end-to-end streaming architecture</strong> — from data generation to dashboard deployment. It strengthened proficiency in <strong>PySpark Structured Streaming</strong>, hands-on Kafka deployment, and efficient time-series data modeling. The work highlights expertise in <strong>real-time analytics, anomaly detection</strong>, and system observability — critical for scalable, production-grade monitoring infrastructures.
                 </p>
             </div>
-
-        </div> 
+        </div>
     </section>
 
     <div class="divider">
@@ -135,14 +128,15 @@
     <footer id="contact">
         <div class="social">
             <a href="https://www.linkedin.com/in/lakeshsuryadevara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                <i class="fab fa-linkedin-in"></i> 
+                <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="mailto:suryadevaralakesh99@gmail.com" aria-label="Email Me">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
-        <p>&copy; 2025 Lakesh. All rights reserved.</p>
+        <p>&copy; 2025 Lakesh Kumar Suryadevara. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script> </body>
+    <script src="main.js"></script>
+</body>
 </html>
